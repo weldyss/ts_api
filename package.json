@@ -4,7 +4,8 @@
   "description": "Creating an API using typescript",
   "main": "server.ts",
   "scripts": {
-    "start": "./node_modules/.bin/ts-node ./server/server.ts",
+    "start": "NODE_ENV=development ./node_modules/.bin/ts-node ./server/server.ts",
+    "builded": "NODE_ENV=development node ./build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -29,6 +30,7 @@
     "@types/morgan": "^1.7.33",
     "@types/sequelize": "^4.0.73",
     "sequelize": "^4.10.0",
-    "ts-node": "^3.3.0"
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2"
   }
 }
